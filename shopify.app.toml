@@ -1,3 +1,36 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-scopes = "write_products"
+client_id = "a71c899cdf223031943a09b8aba5cb30"
+name = "conversion-alert-app"
+handle = "conversion-alert-app"
+application_url = "https://bundle-florence-produced-opinions.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-01"
+
+[[webhooks.subscriptions]]
+topics = ["app/uninstalled"]
+uri = "/webhooks/app/uninstalled"
+
+[[webhooks.subscriptions]]
+topics = ["app/scopes_update"]
+uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+    "https://bundle-florence-produced-opinions.trycloudflare.com/auth/callback",
+    "https://bundle-florence-produced-opinions.trycloudflare.com/auth/shopify/callback",
+    "https://bundle-florence-produced-opinions.trycloudflare.com/api/auth/callback",
+]
+
+[pos]
+embedded = false
