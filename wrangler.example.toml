@@ -1,5 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "conversion-alert-admin"
+name = "myapp"
 compatibility_date = "2024-07-18"
 pages_build_output_dir = "./build/client"
 
@@ -47,7 +47,7 @@ API_WEBHOOK_URL = "https://myapp-api.myapp.com/webhooks"
 # Docs: https://developers.cloudflare.com/pages/functions/bindings/#kv-namespaces
 [[kv_namespaces]]
 binding = "SESSION"
-id = "CONVERSION_ALERT_ADMIN_SESSION"
+id = "CHANGE_ME"
 
 # Bind a Queue producer. Use this binding to schedule an arbitrary task that may be processed later by a Queue consumer.
 # Docs: https://developers.cloudflare.com/pages/functions/bindings/#queue-producers

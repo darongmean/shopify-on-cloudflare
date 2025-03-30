@@ -4,21 +4,15 @@ This is a minimal template to create a Shopify app and host it on Cloudflare Pag
 
 ### How to use
 
+Clone this repository, run `npm run init-project` and follow the instructions.
+
+### Configuration
+
 Change the following configurations in `package.json`:
 
 https://github.com/darongmean/shopify-on-cloudflare/blob/d2e4fae1b40437fa9f6b164369e2da433a146e95/package.json#L2
 
 https://github.com/darongmean/shopify-on-cloudflare/blob/d2e4fae1b40437fa9f6b164369e2da433a146e95/package.json#L73
-
-Change the following configurations in `shopify.app.toml`:
-
-https://github.com/darongmean/shopify-on-cloudflare/blob/f07132677507924be09af47ae441df6435ac3bbc/shopify.app.toml#L3-L6
-
-https://github.com/darongmean/shopify-on-cloudflare/blob/f07132677507924be09af47ae441df6435ac3bbc/shopify.app.toml#L9-L12
-
-https://github.com/darongmean/shopify-on-cloudflare/blob/f07132677507924be09af47ae441df6435ac3bbc/shopify.app.toml#L14-L16
-
-https://github.com/darongmean/shopify-on-cloudflare/blob/f07132677507924be09af47ae441df6435ac3bbc/shopify.app.toml#L18-L23
 
 Change the following configurations in `wrangler.toml`:
 

@@ -7,3 +7,10 @@ node_modules
 
 .wrangler
 .shopify
+
+wrangler.toml
+wrangler.*.toml
+!wrangler.example.toml
+
+shopify.app.toml
+shopify.app.*.toml
